@@ -16,14 +16,11 @@ $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Bootanimation Resolution
 TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_USES_AOSP_RECOVERY := true
-IS_PHONE := true
 
 # OFFICAL STUFF
-CUSTOM_BUILD_TYPE=OFFICIAL
-TARGET_SUPPORTS_GOOGLE_RECORDER := false
-TARGET_INCLUDE_STOCK_ACORE := false
-TARGET_INCLUDE_LIVE_WALLPAPERS := false
+PEX_BUILD_TYPE := OFFICIAL
+PEX_MAINTAINER := sdm439dev
+TARGET_GAPPS_ARCH := arm64
 TARGET_FACE_UNLOCK_SUPPORTED = true
 
 # Device identifier. This must come after all inclusions.
